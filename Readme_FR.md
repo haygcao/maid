@@ -1,8 +1,8 @@
-<div align="center" id = "top">
+<div align="center">
   <img alt="logo" height="200px" src="assets/maid.png">
 </div>
 
-# Maid - Mobile Artificial Intelligence Distribution
+# Maid - Distribution Mobile de l'Intelligence Artificielle
 
 <div align="center">
 
@@ -17,20 +17,20 @@
 <a href="https://f-droid.org/packages/com.danemadsen.maid/">
   <img 
     src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-    alt="Get it on F-Droid"
+    alt="Disponible sur F-Droid"
     height="80"
   >
 </a>
 <a href='https://play.google.com/store/apps/details?id=com.danemadsen.maid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
   <img 
     src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'
-    alt='Get it on Google Play'
+    alt='Disponible sur Google Play'
     height="80"
   />
 </a>
 </div>
 
-Maid is a cross-platform free and an open-source application for interfacing with llama.cpp models locally, and remotely with Ollama, Mistral, Google Gemini and OpenAI models remotely. Maid supports sillytavern character cards to allow you to interact with all your favorite characters. Maid supports downloading a curated list of Models in-app directly from huggingface.
+Maid est une application multiplateforme, gratuite et open-source pour interfacer avec les modèles de **llama.cpp** localement, et à distance avec Ollama, Mistral, Google Gemini et OpenAI. Maid supporte les cartes de personnages **sillytavern** pour interagir avec tous vos personnages favoris. Maid permet de télécharger une liste de modèles soigneusement sélectionnés directement depuis Huggingface.
 
 [![](https://dcbadge.limes.pink/api/server/https://discord.com/invite/yEQ6SJny)](https://discord.com/invite/yEQ6SJny)
 
@@ -52,46 +52,43 @@ Maid is a cross-platform free and an open-source application for interfacing wit
   <img src="media/desktop_demo_3.png" width="800" />
 </div>
 
-## Cloning
-Maid utilises git submodules extensively. To clone the repository, use the following command:
+## Clonage
+Maid utilise des sous-modules Git de manière intensive. Pour cloner le dépôt, utilisez la commande suivante :
 
 ```bash
 git clone --recursive https://github.com/Mobile-Artificial-Intelligence/maid.git
 ```
 
-Maids repository has flutter linked as a submodule. This is needed for reproducible fdroid builds.
-However, for development you may want to use a local install of flutter. Remove the flutter submodule by running the git command
+Maid utilise Flutter comme sous-module Git. Cela est nécessaire pour des builds reproductibles sur F-Droid. Cependant, pour le développement, vous pouvez utiliser une installation locale de Flutter. Retirez le sous-module Flutter en exécutant la commande Git suivante :
 
 ```bash
 git submodule deinit -f packages/flutter
 ```
+## Installation des dépendances de build
 
-## Installing Build Dependencies
-To install the dependencies on fedora based systems, use the following command:
+Pour installer les dépendances sur les systèmes basés sur Fedora, utilisez la commande suivante :
 
 ```bash
 sudo dnf install -y cmake ninja-build pkg-config gtk3-devel vulkan-devel
 ```
+Pour installer les dépendances sur les systèmes basés sur Debian, utilisez la commande suivante :
 
-To install the bdependencies on debian based systems, use the following command:
-
-```bash
+```
 sudo apt-get install -y cmake ninja-build pkg-config libgtk-3-dev libvulkan-dev
 ```
+## Support des plateformes
+Windows, MacOS, Linux, Android.  
+[Page des versions.](https://github.com/Mobile-Artificial-Intelligence/maid/releases)  
+Les versions iOS ne sont pas disponibles pour le moment.
 
-## Platform Support
-Windows, MacOS, Linux, Android.
-[Releases page.](https://github.com/Mobile-Artificial-Intelligence/maid/releases)
-IOS Releases not available at this time.
-
-## Help Wanted
-- Write code comments
+## Aide demandée
+- Écrire des commentaires de code
 - Documentation
-- Testing and Building on IOS
-- Spreading the word
-- [Google Play Testing](https://github.com/Mobile-Artificial-Intelligence/maid/discussions/499)
+- Tests et builds sur iOS
+- Faire connaître le projet
+- [Tests Google Play](https://github.com/Mobile-Artificial-Intelligence/maid/discussions/499)
 
-## Special Thanks and Related Projects
+## Remerciements spéciaux et projets connexes
 - [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)
 - [ollama/ollama](https://github.com/ollama/ollama)
 - [davidmigloz/langchain_dart](https://github.com/davidmigloz/langchain_dart)
@@ -99,33 +96,30 @@ IOS Releases not available at this time.
 - [Mobile-Artificial-Intelligence/babylon_tts](https://github.com/Mobile-Artificial-Intelligence/babylon_tts)
 - [Mobile-Artificial-Intelligence/babylon.cpp](https://github.com/Mobile-Artificial-Intelligence/babylon.cpp)
 
-## Star History
+## Historique des étoiles
 
-[![Star History Chart](https://api.star-history.com/svg?repos=Mobile-Artificial-Intelligence/maid&type=Date)](https://star-history.com/#Mobile-Artificial-Intelligence/maid&Date)
+[![Graphique de l'historique des étoiles](https://api.star-history.com/svg?repos=Mobile-Artificial-Intelligence/maid&type=Date)](https://star-history.com/#Mobile-Artificial-Intelligence/maid&Date)
 
-## Contributors
+## Contributeurs
 
 <a href="https://github.com/Mobile-Artificial-Intelligence/maid/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Mobile-Artificial-Intelligence/maid&max=500&columns=20&anon=1" />
 </a>
 
-## Testing
-MacOS version tested on a 
-Android version tested on a Oneplus 10 Pro 11gb phone.
-Also tested on Fedora Linux, Windows 11.
-Tested with calypso 3b, orcamini 3b, minyllama 1.1b, phi 3, mistral 7b, mixtral 8x7b, llama 2 7B-Chat, llama 7B and many more.
+## Tests
+Version MacOS testée sur un  
+Version Android testée sur un téléphone Oneplus 10 Pro 11Go.  
+Également testée sur Fedora Linux, Windows 11.  
+Testée avec calypso 3b, orcamini 3b, minyllama 1.1b, phi 3, mistral 7b, mixtral 8x7b, llama 2 7B-Chat, llama 7B et bien d'autres.
 
-## Disclaimer
+## Avertissement
 
-Maid is distributed under the MIT licence and is provided without warranty of any kind, express or implied. Maid is not affiliated with Huggingface, Meta (Facebook), MistralAi, OpenAI, Google, Microsoft or any other company providing a model compatible with this application.
+Maid est distribué sous la licence MIT et est fourni sans aucune garantie, explicite ou implicite. Maid n'est affilié à aucune entreprise, y compris Huggingface, Meta (Facebook), MistralAi, OpenAI, Google, Microsoft ou toute autre entreprise fournissant un modèle compatible avec cette application.
 
+## 📜 Licence
 
-## 📜 License
+Ce projet est sous licence [MIT](LICENSE).
 
-This project is licensed under the [MIT License](LICENSE).
-
-<div align="center">
-<p align="center">
-  <a href="#top">
-        <img src="https://img.shields.io/badge/Back%20to%20Top-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to Top">
-    </a>
+<p align="right">
+  <a href="#top">Retour en haut ⬆️</a>
+</p>
